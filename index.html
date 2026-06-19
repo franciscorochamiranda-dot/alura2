@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard P5.js - Criativo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <h1>🎨 P5.js Studio</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
+                    <li><a href="#projects" class="nav-link">Projetos</a></li>
+                    <li><a href="#about" class="nav-link">Sobre</a></li>
+                </ul>
+            </nav>
+            <div class="user-menu">
+                <span id="user-name">Usuário</span>
+                <div class="user-options">
+                    <button id="profile-btn" class="option-btn">Perfil</button>
+                    <button id="settings-btn" class="option-btn">Configurações</button>
+                    <button id="logout-btn" class="option-btn">Sair</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="dashboard-section">
+            <h2>Dashboard</h2>
+            <div class="dashboard-grid">
+                <div class="dashboard-item">
+                    <h3>Geometria</h3>
+                    <div id="sketch-1"></div>
+                </div>
+                <div class="dashboard-item">
+                    <h3>Animação</h3>
+                    <div id="sketch-2"></div>
+                </div>
+                <div class="dashboard-item">
+                    <h3>Interativo</h3>
+                    <div id="sketch-3"></div>
+                </div>
+                <div class="dashboard-item">
+                    <h3>Cores Dinâmicas</h3>
+                    <div id="sketch-4"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <h2>Meus Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <canvas id="project-1"></canvas>
+                    </div>
+                    <h3>Projeto 1</h3>
+                    <p>Descrição do projeto 1</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <canvas id="project-2"></canvas>
+                    </div>
+                    <h3>Projeto 2</h3>
+                    <p>Descrição do projeto 2</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-thumbnail">
+                        <canvas id="project-3"></canvas>
+                    </div>
+                    <h3>Projeto 3</h3>
+                    <p>Descrição do projeto 3</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2>Sobre</h2>
+            <p>Bem-vindo ao P5.js Studio! Um espaço para criar, experimentar e compartilhar arte criativa com JavaScript.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>P5.js Studio</h4>
+                <p>Criatividade sem limites</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="https://p5js.org" target="_blank">P5.js Oficial</a></li>
+                    <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>Email: contato@p5js.studio</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 P5.js Studio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/sketches.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
